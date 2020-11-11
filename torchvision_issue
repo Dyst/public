@@ -1,0 +1,291 @@
+python3 setup.py install
+Building wheel torchvision-0.8.1
+PNG found: True
+libpng version: 1.6.34
+Building torchvision with PNG image support
+libpng include path: /usr/include/libpng16
+Running build on conda-build: False
+Running build on conda: True
+JPEG found: True
+Building torchvision with JPEG image support
+FFmpeg found: True
+ffmpeg include path: /usr/include
+ffmpeg library_dir: /usr/lib
+running install
+running bdist_egg
+running egg_info
+writing torchvision.egg-info/PKG-INFO
+writing dependency_links to torchvision.egg-info/dependency_links.txt
+writing requirements to torchvision.egg-info/requires.txt
+writing top-level names to torchvision.egg-info/top_level.txt
+reading manifest file 'torchvision.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+warning: no previously-included files matching '__pycache__' found under directory '*'
+warning: no previously-included files matching '*.py[co]' found under directory '*'
+writing manifest file 'torchvision.egg-info/SOURCES.txt'
+installing library code to build/bdist.linux-aarch64/egg
+running install_lib
+running build_py
+copying torchvision/version.py -> build/lib.linux-aarch64-3.8/torchvision
+running build_ext
+building 'torchvision._C' extension
+Emitting ninja build file /home/yar/Downloads/torchvision/build/temp.linux-aarch64-3.8/build.ninja...
+Compiling objects...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+[1/9] /usr/local/cuda/bin/nvcc -DWITH_CUDA -I/home/yar/Downloads/torchvision/torchvision/csrc -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/TH -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/yar/archiconda3/envs/test/include/python3.8 -c -c /home/yar/Downloads/torchvision/torchvision/csrc/cuda/nms_cuda.cu -o /home/yar/Downloads/torchvision/build/temp.linux-aarch64-3.8/home/yar/Downloads/torchvision/torchvision/csrc/cuda/nms_cuda.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=1 -gencode=arch=compute_53,code=sm_53 -std=c++14
+[2/9] /usr/local/cuda/bin/nvcc -DWITH_CUDA -I/home/yar/Downloads/torchvision/torchvision/csrc -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/TH -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/yar/archiconda3/envs/test/include/python3.8 -c -c /home/yar/Downloads/torchvision/torchvision/csrc/cuda/PSROIAlign_cuda.cu -o /home/yar/Downloads/torchvision/build/temp.linux-aarch64-3.8/home/yar/Downloads/torchvision/torchvision/csrc/cuda/PSROIAlign_cuda.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=1 -gencode=arch=compute_53,code=sm_53 -std=c++14
+[3/9] /usr/local/cuda/bin/nvcc -DWITH_CUDA -I/home/yar/Downloads/torchvision/torchvision/csrc -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/TH -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/yar/archiconda3/envs/test/include/python3.8 -c -c /home/yar/Downloads/torchvision/torchvision/csrc/cuda/PSROIPool_cuda.cu -o /home/yar/Downloads/torchvision/build/temp.linux-aarch64-3.8/home/yar/Downloads/torchvision/torchvision/csrc/cuda/PSROIPool_cuda.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=1 -gencode=arch=compute_53,code=sm_53 -std=c++14
+[4/9] /usr/local/cuda/bin/nvcc -DWITH_CUDA -I/home/yar/Downloads/torchvision/torchvision/csrc -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/TH -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/yar/archiconda3/envs/test/include/python3.8 -c -c /home/yar/Downloads/torchvision/torchvision/csrc/cuda/ROIAlign_cuda.cu -o /home/yar/Downloads/torchvision/build/temp.linux-aarch64-3.8/home/yar/Downloads/torchvision/torchvision/csrc/cuda/ROIAlign_cuda.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=1 -gencode=arch=compute_53,code=sm_53 -std=c++14
+[5/9] /usr/local/cuda/bin/nvcc -DWITH_CUDA -I/home/yar/Downloads/torchvision/torchvision/csrc -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/TH -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/yar/archiconda3/envs/test/include/python3.8 -c -c /home/yar/Downloads/torchvision/torchvision/csrc/cuda/ROIPool_cuda.cu -o /home/yar/Downloads/torchvision/build/temp.linux-aarch64-3.8/home/yar/Downloads/torchvision/torchvision/csrc/cuda/ROIPool_cuda.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=1 -gencode=arch=compute_53,code=sm_53 -std=c++14
+[6/9] /usr/local/cuda/bin/nvcc -DWITH_CUDA -I/home/yar/Downloads/torchvision/torchvision/csrc -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/TH -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/yar/archiconda3/envs/test/include/python3.8 -c -c /home/yar/Downloads/torchvision/torchvision/csrc/cuda/DeformConv_cuda.cu -o /home/yar/Downloads/torchvision/build/temp.linux-aarch64-3.8/home/yar/Downloads/torchvision/torchvision/csrc/cuda/DeformConv_cuda.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options ''"'"'-fPIC'"'"'' -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=1 -gencode=arch=compute_53,code=sm_53 -std=c++14
+[7/9] c++ -MMD -MF /home/yar/Downloads/torchvision/build/temp.linux-aarch64-3.8/home/yar/Downloads/torchvision/torchvision/csrc/cpu/nms_cpu.o.d -pthread -B /home/yar/archiconda3/envs/test/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DWITH_CUDA -I/home/yar/Downloads/torchvision/torchvision/csrc -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/TH -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/yar/archiconda3/envs/test/include/python3.8 -c -c /home/yar/Downloads/torchvision/torchvision/csrc/cpu/nms_cpu.cpp -o /home/yar/Downloads/torchvision/build/temp.linux-aarch64-3.8/home/yar/Downloads/torchvision/torchvision/csrc/cpu/nms_cpu.o -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=1 -std=c++14
+cc1plus: warning: command line option ‘-Wstrict-prototypes’ is valid for C/ObjC but not for C++
+In file included from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/ATen/Parallel.h:149:0,
+                 from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/utils.h:3,
+                 from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/nn/cloneable.h:5,
+                 from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/nn.h:3,
+                 from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/all.h:12,
+                 from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/extension.h:4,
+                 from /home/yar/Downloads/torchvision/torchvision/csrc/cpu/vision_cpu.h:2,
+                 from /home/yar/Downloads/torchvision/torchvision/csrc/cpu/nms_cpu.cpp:1:
+/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/ATen/ParallelOpenMP.h:84:0: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+ #pragma omp parallel for if ((end - begin) >= grain_size)
+ 
+[8/9] c++ -MMD -MF /home/yar/Downloads/torchvision/build/temp.linux-aarch64-3.8/home/yar/Downloads/torchvision/torchvision/csrc/cpu/ROIAlign_cpu.o.d -pthread -B /home/yar/archiconda3/envs/test/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DWITH_CUDA -I/home/yar/Downloads/torchvision/torchvision/csrc -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/TH -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/yar/archiconda3/envs/test/include/python3.8 -c -c /home/yar/Downloads/torchvision/torchvision/csrc/cpu/ROIAlign_cpu.cpp -o /home/yar/Downloads/torchvision/build/temp.linux-aarch64-3.8/home/yar/Downloads/torchvision/torchvision/csrc/cpu/ROIAlign_cpu.o -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=1 -std=c++14
+cc1plus: warning: command line option ‘-Wstrict-prototypes’ is valid for C/ObjC but not for C++
+In file included from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/ATen/Parallel.h:149:0,
+                 from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/utils.h:3,
+                 from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/nn/cloneable.h:5,
+                 from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/nn.h:3,
+                 from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/all.h:12,
+                 from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/extension.h:4,
+                 from /home/yar/Downloads/torchvision/torchvision/csrc/cpu/vision_cpu.h:2,
+                 from /home/yar/Downloads/torchvision/torchvision/csrc/cpu/ROIAlign_cpu.cpp:2:
+/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/ATen/ParallelOpenMP.h:84:0: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+ #pragma omp parallel for if ((end - begin) >= grain_size)
+ 
+[9/9] c++ -MMD -MF /home/yar/Downloads/torchvision/build/temp.linux-aarch64-3.8/home/yar/Downloads/torchvision/torchvision/csrc/vision.o.d -pthread -B /home/yar/archiconda3/envs/test/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DWITH_CUDA -I/home/yar/Downloads/torchvision/torchvision/csrc -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/TH -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/yar/archiconda3/envs/test/include/python3.8 -c -c /home/yar/Downloads/torchvision/torchvision/csrc/vision.cpp -o /home/yar/Downloads/torchvision/build/temp.linux-aarch64-3.8/home/yar/Downloads/torchvision/torchvision/csrc/vision.o -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=1 -std=c++14
+cc1plus: warning: command line option ‘-Wstrict-prototypes’ is valid for C/ObjC but not for C++
+In file included from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/ATen/Parallel.h:149:0,
+                 from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/utils.h:3,
+                 from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/nn/cloneable.h:5,
+                 from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/nn.h:3,
+                 from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/all.h:12,
+                 from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/extension.h:4,
+                 from /home/yar/Downloads/torchvision/torchvision/csrc/cpu/vision_cpu.h:2,
+                 from /home/yar/Downloads/torchvision/torchvision/csrc/DeformConv.h:3,
+                 from /home/yar/Downloads/torchvision/torchvision/csrc/vision.cpp:11:
+/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/ATen/ParallelOpenMP.h:84:0: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+ #pragma omp parallel for if ((end - begin) >= grain_size)
+ 
+In file included from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/ATen/core/boxing/KernelFunction_impl.h:2:0,
+                 from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/ATen/core/boxing/KernelFunction.h:239,
+                 from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/ATen/core/dispatch/Dispatcher.h:4,
+                 from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/jit/runtime/operator.h:6,
+                 from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/jit/ir/ir.h:7,
+                 from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/jit/api/function_impl.h:4,
+                 from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/jit/api/method.h:5,
+                 from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/jit/api/object.h:5,
+                 from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/jit/frontend/tracer.h:9,
+                 from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/autograd/generated/variable_factories.h:12,
+                 from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/types.h:7,
+                 from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/script.h:3,
+                 from /home/yar/Downloads/torchvision/torchvision/csrc/vision.cpp:2:
+/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/ATen/core/boxing/impl/make_boxed_from_unboxed_functor.h: In instantiation of ‘std::decay_t<typename c10::guts::infer_function_traits<Functor>::type::return_type> c10::impl::call_functor_with_args_from_stack_(Functor*, c10::Stack*, std::index_sequence<INDEX ...>) [with Functor = c10::impl::detail::WrapFunctionIntoRuntimeFunctor_<long int (*)(), long int, c10::guts::typelist::typelist<> >; bool AllowDeprecatedTypes = false; long unsigned int ...ivalue_arg_indices = {}; std::decay_t<typename c10::guts::infer_function_traits<Functor>::type::return_type> = long int; c10::Stack = std::vector<c10::IValue>; std::index_sequence<INDEX ...> = std::integer_sequence<long unsigned int>]’:
+/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/ATen/core/boxing/impl/make_boxed_from_unboxed_functor.h:346:77:   required from ‘std::decay_t<typename c10::guts::infer_function_traits<Functor>::type::return_type> c10::impl::call_functor_with_args_from_stack(Functor*, c10::Stack*) [with Functor = c10::impl::detail::WrapFunctionIntoRuntimeFunctor_<long int (*)(), long int, c10::guts::typelist::typelist<> >; bool AllowDeprecatedTypes = false; std::decay_t<typename c10::guts::infer_function_traits<Functor>::type::return_type> = long int; c10::Stack = std::vector<c10::IValue>]’
+/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/ATen/core/boxing/impl/make_boxed_from_unboxed_functor.h:396:79:   required from ‘c10::impl::make_boxed_from_unboxed_functor<KernelFunctor, AllowDeprecatedTypes>::call(c10::OperatorKernel*, const c10::OperatorHandle&, c10::Stack*)::<lambda()> [with KernelFunctor = c10::impl::detail::WrapFunctionIntoRuntimeFunctor_<long int (*)(), long int, c10::guts::typelist::typelist<> >; bool AllowDeprecatedTypes = false]’
+/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/ATen/core/boxing/impl/make_boxed_from_unboxed_functor.h:396:90:   required from ‘struct c10::impl::make_boxed_from_unboxed_functor<KernelFunctor, AllowDeprecatedTypes>::call(c10::OperatorKernel*, const c10::OperatorHandle&, c10::Stack*) [with KernelFunctor = c10::impl::detail::WrapFunctionIntoRuntimeFunctor_<long int (*)(), long int, c10::guts::typelist::typelist<> >; bool AllowDeprecatedTypes = false; c10::Stack = std::vector<c10::IValue>]::<lambda()>’
+/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/ATen/core/boxing/impl/make_boxed_from_unboxed_functor.h:388:38:   required from ‘static void c10::impl::make_boxed_from_unboxed_functor<KernelFunctor, AllowDeprecatedTypes>::call(c10::OperatorKernel*, const c10::OperatorHandle&, c10::Stack*) [with KernelFunctor = c10::impl::detail::WrapFunctionIntoRuntimeFunctor_<long int (*)(), long int, c10::guts::typelist::typelist<> >; bool AllowDeprecatedTypes = false; c10::Stack = std::vector<c10::IValue>]’
+/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/ATen/core/boxing/KernelFunction_impl.h:109:9:   required from ‘static c10::KernelFunction c10::KernelFunction::makeFromUnboxedFunctor(std::unique_ptr<c10::OperatorKernel>) [with bool AllowLegacyTypes = false; KernelFunctor = c10::impl::detail::WrapFunctionIntoRuntimeFunctor_<long int (*)(), long int, c10::guts::typelist::typelist<> >]’
+/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/ATen/core/boxing/KernelFunction_impl.h:159:114:   required from ‘static c10::KernelFunction c10::KernelFunction::makeFromUnboxedRuntimeFunction(FuncType*) [with bool AllowLegacyTypes = false; FuncType = long int()]’
+/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/library.h:92:64:   required from ‘torch::CppFunction::CppFunction(Func*, std::enable_if_t<c10::guts::is_function_type<FuncType_>::value, std::nullptr_t>) [with Func = long int(); std::enable_if_t<c10::guts::is_function_type<FuncType_>::value, std::nullptr_t> = std::nullptr_t]’
+/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/library.h:457:17:   required from ‘torch::Library& torch::Library::def(NameOrSchema&&, Func&&) & [with NameOrSchema = const char (&)[14]; Func = long int (*)()]’
+/home/yar/Downloads/torchvision/torchvision/csrc/vision.cpp:56:40:   required from here
+/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/ATen/core/boxing/impl/make_boxed_from_unboxed_functor.h:326:22: warning: variable ‘num_ivalue_args’ set but not used [-Wunused-but-set-variable]
+     constexpr size_t num_ivalue_args = sizeof...(ivalue_arg_indices);
+                      ^~~~~~~~~~~~~~~
+g++ -pthread -shared -B /home/yar/archiconda3/envs/test/compiler_compat -L/home/yar/archiconda3/envs/test/lib -Wl,-rpath=/home/yar/archiconda3/envs/test/lib -Wl,--no-as-needed -Wl,--sysroot=/ /home/yar/Downloads/torchvision/build/temp.linux-aarch64-3.8/home/yar/Downloads/torchvision/torchvision/csrc/vision.o /home/yar/Downloads/torchvision/build/temp.linux-aarch64-3.8/home/yar/Downloads/torchvision/torchvision/csrc/cpu/nms_cpu.o /home/yar/Downloads/torchvision/build/temp.linux-aarch64-3.8/home/yar/Downloads/torchvision/torchvision/csrc/cpu/DeformConv_cpu.o /home/yar/Downloads/torchvision/build/temp.linux-aarch64-3.8/home/yar/Downloads/torchvision/torchvision/csrc/cpu/PSROIPool_cpu.o /home/yar/Downloads/torchvision/build/temp.linux-aarch64-3.8/home/yar/Downloads/torchvision/torchvision/csrc/cpu/PSROIAlign_cpu.o /home/yar/Downloads/torchvision/build/temp.linux-aarch64-3.8/home/yar/Downloads/torchvision/torchvision/csrc/cpu/ROIPool_cpu.o /home/yar/Downloads/torchvision/build/temp.linux-aarch64-3.8/home/yar/Downloads/torchvision/torchvision/csrc/cpu/ROIAlign_cpu.o /home/yar/Downloads/torchvision/build/temp.linux-aarch64-3.8/home/yar/Downloads/torchvision/torchvision/csrc/cuda/nms_cuda.o /home/yar/Downloads/torchvision/build/temp.linux-aarch64-3.8/home/yar/Downloads/torchvision/torchvision/csrc/cuda/PSROIPool_cuda.o /home/yar/Downloads/torchvision/build/temp.linux-aarch64-3.8/home/yar/Downloads/torchvision/torchvision/csrc/cuda/PSROIAlign_cuda.o /home/yar/Downloads/torchvision/build/temp.linux-aarch64-3.8/home/yar/Downloads/torchvision/torchvision/csrc/cuda/ROIPool_cuda.o /home/yar/Downloads/torchvision/build/temp.linux-aarch64-3.8/home/yar/Downloads/torchvision/torchvision/csrc/cuda/ROIAlign_cuda.o /home/yar/Downloads/torchvision/build/temp.linux-aarch64-3.8/home/yar/Downloads/torchvision/torchvision/csrc/cuda/DeformConv_cuda.o -L/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/lib -L/usr/local/cuda/lib64 -lc10 -ltorch -ltorch_cpu -ltorch_python -lcudart -lc10_cuda -ltorch_cuda -o build/lib.linux-aarch64-3.8/torchvision/_C.so
+/home/yar/archiconda3/envs/test/compiler_compat/ld: warning: library search path "/usr/lib/gcc/aarch64-linux-gnu/7" is unsafe for cross-compilation
+/home/yar/archiconda3/envs/test/compiler_compat/ld: warning: library search path "/usr/lib/gcc/aarch64-linux-gnu/7/../../../aarch64-linux-gnu" is unsafe for cross-compilation
+/home/yar/archiconda3/envs/test/compiler_compat/ld: warning: library search path "/usr/lib/gcc/aarch64-linux-gnu/7/../../../../lib" is unsafe for cross-compilation
+/home/yar/archiconda3/envs/test/compiler_compat/ld: warning: library search path "/lib/aarch64-linux-gnu" is unsafe for cross-compilation
+/home/yar/archiconda3/envs/test/compiler_compat/ld: warning: library search path "/lib/../lib" is unsafe for cross-compilation
+/home/yar/archiconda3/envs/test/compiler_compat/ld: warning: library search path "/usr/lib/aarch64-linux-gnu" is unsafe for cross-compilation
+/home/yar/archiconda3/envs/test/compiler_compat/ld: warning: library search path "/usr/lib/../lib" is unsafe for cross-compilation
+/home/yar/archiconda3/envs/test/compiler_compat/ld: warning: library search path "/usr/lib/gcc/aarch64-linux-gnu/7/../../.." is unsafe for cross-compilation
+building 'torchvision.image' extension
+creating /home/yar/Downloads/torchvision/build/temp.linux-aarch64-3.8/home/yar/Downloads/torchvision/torchvision/csrc/cpu/image
+Emitting ninja build file /home/yar/Downloads/torchvision/build/temp.linux-aarch64-3.8/build.ninja...
+Compiling objects...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+[1/8] c++ -MMD -MF /home/yar/Downloads/torchvision/build/temp.linux-aarch64-3.8/home/yar/Downloads/torchvision/torchvision/csrc/cpu/image/jpegcommon.o.d -pthread -B /home/yar/archiconda3/envs/test/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DPNG_FOUND=1 -DJPEG_FOUND=1 -I/home/yar/Downloads/torchvision/torchvision/csrc -I/usr/include/libpng16 -I/home/yar/Downloads/torchvision/torchvision/csrc -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/TH -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/yar/Downloads/torchvision/torchvision/csrc/cpu/image -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/TH -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/yar/archiconda3/envs/test/include/python3.8 -c -c /home/yar/Downloads/torchvision/torchvision/csrc/cpu/image/jpegcommon.cpp -o /home/yar/Downloads/torchvision/build/temp.linux-aarch64-3.8/home/yar/Downloads/torchvision/torchvision/csrc/cpu/image/jpegcommon.o -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=image -D_GLIBCXX_USE_CXX11_ABI=1 -std=c++14
+cc1plus: warning: command line option ‘-Wstrict-prototypes’ is valid for C/ObjC but not for C++
+[2/8] c++ -MMD -MF /home/yar/Downloads/torchvision/build/temp.linux-aarch64-3.8/home/yar/Downloads/torchvision/torchvision/csrc/cpu/image/read_image_cpu.o.d -pthread -B /home/yar/archiconda3/envs/test/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DPNG_FOUND=1 -DJPEG_FOUND=1 -I/home/yar/Downloads/torchvision/torchvision/csrc -I/usr/include/libpng16 -I/home/yar/Downloads/torchvision/torchvision/csrc -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/TH -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/yar/Downloads/torchvision/torchvision/csrc/cpu/image -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/TH -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/yar/archiconda3/envs/test/include/python3.8 -c -c /home/yar/Downloads/torchvision/torchvision/csrc/cpu/image/read_image_cpu.cpp -o /home/yar/Downloads/torchvision/build/temp.linux-aarch64-3.8/home/yar/Downloads/torchvision/torchvision/csrc/cpu/image/read_image_cpu.o -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=image -D_GLIBCXX_USE_CXX11_ABI=1 -std=c++14
+FAILED: /home/yar/Downloads/torchvision/build/temp.linux-aarch64-3.8/home/yar/Downloads/torchvision/torchvision/csrc/cpu/image/read_image_cpu.o 
+c++ -MMD -MF /home/yar/Downloads/torchvision/build/temp.linux-aarch64-3.8/home/yar/Downloads/torchvision/torchvision/csrc/cpu/image/read_image_cpu.o.d -pthread -B /home/yar/archiconda3/envs/test/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DPNG_FOUND=1 -DJPEG_FOUND=1 -I/home/yar/Downloads/torchvision/torchvision/csrc -I/usr/include/libpng16 -I/home/yar/Downloads/torchvision/torchvision/csrc -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/TH -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/yar/Downloads/torchvision/torchvision/csrc/cpu/image -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/TH -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/yar/archiconda3/envs/test/include/python3.8 -c -c /home/yar/Downloads/torchvision/torchvision/csrc/cpu/image/read_image_cpu.cpp -o /home/yar/Downloads/torchvision/build/temp.linux-aarch64-3.8/home/yar/Downloads/torchvision/torchvision/csrc/cpu/image/read_image_cpu.o -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=image -D_GLIBCXX_USE_CXX11_ABI=1 -std=c++14
+cc1plus: warning: command line option ‘-Wstrict-prototypes’ is valid for C/ObjC but not for C++
+In file included from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/ATen/Parallel.h:149:0,
+                 from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/utils.h:3,
+                 from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/nn/cloneable.h:5,
+                 from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/nn.h:3,
+                 from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/all.h:12,
+                 from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/torch.h:3,
+                 from /home/yar/Downloads/torchvision/torchvision/csrc/cpu/image/readjpeg_cpu.h:3,
+                 from /home/yar/Downloads/torchvision/torchvision/csrc/cpu/image/read_image_cpu.h:3,
+                 from /home/yar/Downloads/torchvision/torchvision/csrc/cpu/image/read_image_cpu.cpp:1:
+/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/ATen/ParallelOpenMP.h:84:0: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+ #pragma omp parallel for if ((end - begin) >= grain_size)
+ 
+c++: internal compiler error: Killed (program cc1plus)
+Please submit a full bug report,
+with preprocessed source if appropriate.
+See <file:///usr/share/doc/gcc-7/README.Bugs> for instructions.
+[3/8] c++ -MMD -MF /home/yar/Downloads/torchvision/build/temp.linux-aarch64-3.8/home/yar/Downloads/torchvision/torchvision/csrc/cpu/image/image.o.d -pthread -B /home/yar/archiconda3/envs/test/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DPNG_FOUND=1 -DJPEG_FOUND=1 -I/home/yar/Downloads/torchvision/torchvision/csrc -I/usr/include/libpng16 -I/home/yar/Downloads/torchvision/torchvision/csrc -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/TH -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/yar/Downloads/torchvision/torchvision/csrc/cpu/image -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/TH -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/yar/archiconda3/envs/test/include/python3.8 -c -c /home/yar/Downloads/torchvision/torchvision/csrc/cpu/image/image.cpp -o /home/yar/Downloads/torchvision/build/temp.linux-aarch64-3.8/home/yar/Downloads/torchvision/torchvision/csrc/cpu/image/image.o -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=image -D_GLIBCXX_USE_CXX11_ABI=1 -std=c++14
+FAILED: /home/yar/Downloads/torchvision/build/temp.linux-aarch64-3.8/home/yar/Downloads/torchvision/torchvision/csrc/cpu/image/image.o 
+c++ -MMD -MF /home/yar/Downloads/torchvision/build/temp.linux-aarch64-3.8/home/yar/Downloads/torchvision/torchvision/csrc/cpu/image/image.o.d -pthread -B /home/yar/archiconda3/envs/test/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DPNG_FOUND=1 -DJPEG_FOUND=1 -I/home/yar/Downloads/torchvision/torchvision/csrc -I/usr/include/libpng16 -I/home/yar/Downloads/torchvision/torchvision/csrc -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/TH -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/yar/Downloads/torchvision/torchvision/csrc/cpu/image -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/TH -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/yar/archiconda3/envs/test/include/python3.8 -c -c /home/yar/Downloads/torchvision/torchvision/csrc/cpu/image/image.cpp -o /home/yar/Downloads/torchvision/build/temp.linux-aarch64-3.8/home/yar/Downloads/torchvision/torchvision/csrc/cpu/image/image.o -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=image -D_GLIBCXX_USE_CXX11_ABI=1 -std=c++14
+cc1plus: warning: command line option ‘-Wstrict-prototypes’ is valid for C/ObjC but not for C++
+In file included from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/ATen/Parallel.h:149:0,
+                 from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/utils.h:3,
+                 from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/nn/cloneable.h:5,
+                 from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/nn.h:3,
+                 from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/all.h:12,
+                 from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/torch.h:3,
+                 from /home/yar/Downloads/torchvision/torchvision/csrc/cpu/image/image.h:5,
+                 from /home/yar/Downloads/torchvision/torchvision/csrc/cpu/image/image.cpp:2:
+/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/ATen/ParallelOpenMP.h:84:0: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+ #pragma omp parallel for if ((end - begin) >= grain_size)
+ 
+c++: internal compiler error: Killed (program cc1plus)
+Please submit a full bug report,
+with preprocessed source if appropriate.
+See <file:///usr/share/doc/gcc-7/README.Bugs> for instructions.
+[4/8] c++ -MMD -MF /home/yar/Downloads/torchvision/build/temp.linux-aarch64-3.8/home/yar/Downloads/torchvision/torchvision/csrc/cpu/image/read_write_file_cpu.o.d -pthread -B /home/yar/archiconda3/envs/test/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DPNG_FOUND=1 -DJPEG_FOUND=1 -I/home/yar/Downloads/torchvision/torchvision/csrc -I/usr/include/libpng16 -I/home/yar/Downloads/torchvision/torchvision/csrc -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/TH -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/yar/Downloads/torchvision/torchvision/csrc/cpu/image -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/TH -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/yar/archiconda3/envs/test/include/python3.8 -c -c /home/yar/Downloads/torchvision/torchvision/csrc/cpu/image/read_write_file_cpu.cpp -o /home/yar/Downloads/torchvision/build/temp.linux-aarch64-3.8/home/yar/Downloads/torchvision/torchvision/csrc/cpu/image/read_write_file_cpu.o -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=image -D_GLIBCXX_USE_CXX11_ABI=1 -std=c++14
+cc1plus: warning: command line option ‘-Wstrict-prototypes’ is valid for C/ObjC but not for C++
+In file included from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/ATen/Parallel.h:149:0,
+                 from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/utils.h:3,
+                 from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/nn/cloneable.h:5,
+                 from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/nn.h:3,
+                 from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/all.h:12,
+                 from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/torch.h:3,
+                 from /home/yar/Downloads/torchvision/torchvision/csrc/cpu/image/read_write_file_cpu.h:5,
+                 from /home/yar/Downloads/torchvision/torchvision/csrc/cpu/image/read_write_file_cpu.cpp:1:
+/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/ATen/ParallelOpenMP.h:84:0: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+ #pragma omp parallel for if ((end - begin) >= grain_size)
+ 
+[5/8] c++ -MMD -MF /home/yar/Downloads/torchvision/build/temp.linux-aarch64-3.8/home/yar/Downloads/torchvision/torchvision/csrc/cpu/image/readjpeg_cpu.o.d -pthread -B /home/yar/archiconda3/envs/test/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DPNG_FOUND=1 -DJPEG_FOUND=1 -I/home/yar/Downloads/torchvision/torchvision/csrc -I/usr/include/libpng16 -I/home/yar/Downloads/torchvision/torchvision/csrc -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/TH -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/yar/Downloads/torchvision/torchvision/csrc/cpu/image -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/TH -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/yar/archiconda3/envs/test/include/python3.8 -c -c /home/yar/Downloads/torchvision/torchvision/csrc/cpu/image/readjpeg_cpu.cpp -o /home/yar/Downloads/torchvision/build/temp.linux-aarch64-3.8/home/yar/Downloads/torchvision/torchvision/csrc/cpu/image/readjpeg_cpu.o -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=image -D_GLIBCXX_USE_CXX11_ABI=1 -std=c++14
+cc1plus: warning: command line option ‘-Wstrict-prototypes’ is valid for C/ObjC but not for C++
+In file included from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/ATen/Parallel.h:149:0,
+                 from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/utils.h:3,
+                 from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/nn/cloneable.h:5,
+                 from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/nn.h:3,
+                 from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/all.h:12,
+                 from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/torch.h:3,
+                 from /home/yar/Downloads/torchvision/torchvision/csrc/cpu/image/readjpeg_cpu.h:3,
+                 from /home/yar/Downloads/torchvision/torchvision/csrc/cpu/image/readjpeg_cpu.cpp:1:
+/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/ATen/ParallelOpenMP.h:84:0: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+ #pragma omp parallel for if ((end - begin) >= grain_size)
+ 
+/home/yar/Downloads/torchvision/torchvision/csrc/cpu/image/readjpeg_cpu.cpp: In function ‘void torch_jpeg_skip_input_data(j_decompress_ptr, long int)’:
+/home/yar/Downloads/torchvision/torchvision/csrc/cpu/image/readjpeg_cpu.cpp:39:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (src->pub.bytes_in_buffer < num_bytes) {
+       ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~
+[6/8] c++ -MMD -MF /home/yar/Downloads/torchvision/build/temp.linux-aarch64-3.8/home/yar/Downloads/torchvision/torchvision/csrc/cpu/image/readpng_cpu.o.d -pthread -B /home/yar/archiconda3/envs/test/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DPNG_FOUND=1 -DJPEG_FOUND=1 -I/home/yar/Downloads/torchvision/torchvision/csrc -I/usr/include/libpng16 -I/home/yar/Downloads/torchvision/torchvision/csrc -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/TH -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/yar/Downloads/torchvision/torchvision/csrc/cpu/image -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/TH -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/yar/archiconda3/envs/test/include/python3.8 -c -c /home/yar/Downloads/torchvision/torchvision/csrc/cpu/image/readpng_cpu.cpp -o /home/yar/Downloads/torchvision/build/temp.linux-aarch64-3.8/home/yar/Downloads/torchvision/torchvision/csrc/cpu/image/readpng_cpu.o -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=image -D_GLIBCXX_USE_CXX11_ABI=1 -std=c++14
+cc1plus: warning: command line option ‘-Wstrict-prototypes’ is valid for C/ObjC but not for C++
+In file included from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/ATen/Parallel.h:149:0,
+                 from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/utils.h:3,
+                 from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/nn/cloneable.h:5,
+                 from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/nn.h:3,
+                 from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/all.h:12,
+                 from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/torch.h:3,
+                 from /home/yar/Downloads/torchvision/torchvision/csrc/cpu/image/readpng_cpu.h:4,
+                 from /home/yar/Downloads/torchvision/torchvision/csrc/cpu/image/readpng_cpu.cpp:1:
+/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/ATen/ParallelOpenMP.h:84:0: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+ #pragma omp parallel for if ((end - begin) >= grain_size)
+ 
+[7/8] c++ -MMD -MF /home/yar/Downloads/torchvision/build/temp.linux-aarch64-3.8/home/yar/Downloads/torchvision/torchvision/csrc/cpu/image/writepng_cpu.o.d -pthread -B /home/yar/archiconda3/envs/test/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -DPNG_FOUND=1 -DJPEG_FOUND=1 -I/home/yar/Downloads/torchvision/torchvision/csrc -I/usr/include/libpng16 -I/home/yar/Downloads/torchvision/torchvision/csrc -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/TH -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/yar/Downloads/torchvision/torchvision/csrc/cpu/image -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/TH -I/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/yar/archiconda3/envs/test/include/python3.8 -c -c /home/yar/Downloads/torchvision/torchvision/csrc/cpu/image/writepng_cpu.cpp -o /home/yar/Downloads/torchvision/build/temp.linux-aarch64-3.8/home/yar/Downloads/torchvision/torchvision/csrc/cpu/image/writepng_cpu.o -DTORCH_API_INCLUDE_EXTENSION_H -DTORCH_EXTENSION_NAME=image -D_GLIBCXX_USE_CXX11_ABI=1 -std=c++14
+cc1plus: warning: command line option ‘-Wstrict-prototypes’ is valid for C/ObjC but not for C++
+In file included from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/ATen/Parallel.h:149:0,
+                 from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/utils.h:3,
+                 from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/nn/cloneable.h:5,
+                 from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/nn.h:3,
+                 from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/all.h:12,
+                 from /home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/torch/csrc/api/include/torch/torch.h:3,
+                 from /home/yar/Downloads/torchvision/torchvision/csrc/cpu/image/writejpeg_cpu.h:3,
+                 from /home/yar/Downloads/torchvision/torchvision/csrc/cpu/image/writepng_cpu.cpp:1:
+/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/include/ATen/ParallelOpenMP.h:84:0: warning: ignoring #pragma omp parallel [-Wunknown-pragmas]
+ #pragma omp parallel for if ((end - begin) >= grain_size)
+ 
+/home/yar/Downloads/torchvision/torchvision/csrc/cpu/image/writepng_cpu.cpp: In function ‘at::Tensor encodePNG(const at::Tensor&, int64_t)’:
+/home/yar/Downloads/torchvision/torchvision/csrc/cpu/image/writepng_cpu.cpp:153:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (size_t y = 0; y < height; ++y) {
+                      ~~^~~~~~~~
+ninja: build stopped: subcommand failed.
+Traceback (most recent call last):
+  File "/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/utils/cpp_extension.py", line 1516, in _run_ninja_build
+    subprocess.run(
+  File "/home/yar/archiconda3/envs/test/lib/python3.8/subprocess.py", line 512, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['ninja', '-v']' returned non-zero exit status 1.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "setup.py", line 400, in <module>
+    setup(
+  File "/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/setuptools/__init__.py", line 153, in setup
+    return distutils.core.setup(**attrs)
+  File "/home/yar/archiconda3/envs/test/lib/python3.8/distutils/core.py", line 148, in setup
+    dist.run_commands()
+  File "/home/yar/archiconda3/envs/test/lib/python3.8/distutils/dist.py", line 966, in run_commands
+    self.run_command(cmd)
+  File "/home/yar/archiconda3/envs/test/lib/python3.8/distutils/dist.py", line 985, in run_command
+    cmd_obj.run()
+  File "/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/setuptools/command/install.py", line 67, in run
+    self.do_egg_install()
+  File "/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/setuptools/command/install.py", line 109, in do_egg_install
+    self.run_command('bdist_egg')
+  File "/home/yar/archiconda3/envs/test/lib/python3.8/distutils/cmd.py", line 313, in run_command
+    self.distribution.run_command(command)
+  File "/home/yar/archiconda3/envs/test/lib/python3.8/distutils/dist.py", line 985, in run_command
+    cmd_obj.run()
+  File "/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/setuptools/command/bdist_egg.py", line 167, in run
+    cmd = self.call_command('install_lib', warn_dir=0)
+  File "/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/setuptools/command/bdist_egg.py", line 153, in call_command
+    self.run_command(cmdname)
+  File "/home/yar/archiconda3/envs/test/lib/python3.8/distutils/cmd.py", line 313, in run_command
+    self.distribution.run_command(command)
+  File "/home/yar/archiconda3/envs/test/lib/python3.8/distutils/dist.py", line 985, in run_command
+    cmd_obj.run()
+  File "/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/setuptools/command/install_lib.py", line 11, in run
+    self.build()
+  File "/home/yar/archiconda3/envs/test/lib/python3.8/distutils/command/install_lib.py", line 107, in build
+    self.run_command('build_ext')
+  File "/home/yar/archiconda3/envs/test/lib/python3.8/distutils/cmd.py", line 313, in run_command
+    self.distribution.run_command(command)
+  File "/home/yar/archiconda3/envs/test/lib/python3.8/distutils/dist.py", line 985, in run_command
+    cmd_obj.run()
+  File "/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/setuptools/command/build_ext.py", line 79, in run
+    _build_ext.run(self)
+  File "/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/Cython/Distutils/old_build_ext.py", line 186, in run
+    _build_ext.build_ext.run(self)
+  File "/home/yar/archiconda3/envs/test/lib/python3.8/distutils/command/build_ext.py", line 340, in run
+    self.build_extensions()
+  File "/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/utils/cpp_extension.py", line 653, in build_extensions
+    build_ext.build_extensions(self)
+  File "/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/Cython/Distutils/old_build_ext.py", line 195, in build_extensions
+    _build_ext.build_ext.build_extensions(self)
+  File "/home/yar/archiconda3/envs/test/lib/python3.8/distutils/command/build_ext.py", line 449, in build_extensions
+    self._build_extensions_serial()
+  File "/home/yar/archiconda3/envs/test/lib/python3.8/distutils/command/build_ext.py", line 474, in _build_extensions_serial
+    self.build_extension(ext)
+  File "/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/setuptools/command/build_ext.py", line 196, in build_extension
+    _build_ext.build_extension(self, ext)
+  File "/home/yar/archiconda3/envs/test/lib/python3.8/distutils/command/build_ext.py", line 528, in build_extension
+    objects = self.compiler.compile(sources,
+  File "/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/utils/cpp_extension.py", line 473, in unix_wrap_ninja_compile
+    _write_ninja_file_and_compile_objects(
+  File "/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/utils/cpp_extension.py", line 1233, in _write_ninja_file_and_compile_objects
+    _run_ninja_build(
+  File "/home/yar/archiconda3/envs/test/lib/python3.8/site-packages/torch/utils/cpp_extension.py", line 1538, in _run_ninja_build
+    raise RuntimeError(message) from e
+RuntimeError: Error compiling objects for extension
